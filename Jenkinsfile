@@ -2,7 +2,7 @@ node {
 
     checkout scm
 
-    docker.withRegistry('https://registry.hub.docker.com', 'testpush') {
+    docker.withRegistry('https://registry.hub.docker.com', 'hagenid') {
 
         def customImage = docker.build("hagenid/testpush")
 
